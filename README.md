@@ -24,7 +24,7 @@ Entrei na programação porque ela é, essencialmente, uma área de lógica. Gos
 
 - 💼 Consultor de Tecnologia na **Konia Tecnologia**
 - 📚 Cursando o Técnico em Desenvolvimento de Sistemas na **Etec**
-- 🌐 Evoluindo meu [portfólio pessoal](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) — código e documentação na pasta [`docs/`](docs/)
+- 🌐 Evoluindo meu [portfólio pessoal](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/), disponível em **português e inglês** — código e documentação na pasta [`docs/`](docs/)
 
 ### 🧭 Trajetória
 
@@ -37,7 +37,7 @@ Entrei na programação porque ela é, essencialmente, uma área de lógica. Gos
 
 | Projeto | Descrição | Tecnologias |
 |---|---|---|
-| [Portfólio pessoal](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) | Site com tema claro/escuro, animações e projetos interativos | HTML, CSS, JavaScript, Bootstrap |
+| [Portfólio pessoal](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) | Site bilíngue (português/inglês) com tema claro/escuro, animações e projetos interativos | HTML, CSS, JavaScript, Bootstrap |
 | [Website Fatec Itaquera](https://github.com/marcelo-almeida-de-araujo/dgm-sa-site-fatec-itaquera) | Redesign do site institucional com foco em UX/UI | HTML, CSS, JavaScript |
 | [Dashboard de Assessoria](https://github.com/marcelo-almeida-de-araujo/mada-wb-dashboard) | Gestão de informações de clientes | Java, Spring Boot, MongoDB |
 | [Novo Conecta ONGs](https://github.com/marcelo-almeida-de-araujo/mada-novo-conecta-ongs) | Plataforma para ONGs/OSCs e seus voluntários | Next.js, Node.js, MySQL |
@@ -71,7 +71,7 @@ I got into programming because it's fundamentally a logic-based field. I enjoy s
 
 - 💼 Technology Consultant at **Konia Tecnologia**
 - 📚 Studying Systems Development at **Etec**
-- 🌐 Improving my [personal portfolio](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) — source code and docs in the [`docs/`](docs/) folder
+- 🌐 Improving my [personal portfolio](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/), available in **Portuguese and English** — source code and docs in the [`docs/`](docs/) folder
 
 ### 🧭 Journey
 
@@ -84,7 +84,7 @@ I got into programming because it's fundamentally a logic-based field. I enjoy s
 
 | Project | Description | Stack |
 |---|---|---|
-| [Personal portfolio](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) | Website with light/dark theme, animations and interactive projects | HTML, CSS, JavaScript, Bootstrap |
+| [Personal portfolio](https://marcelo-almeida-de-araujo.github.io/marcelo-almeida-de-araujo/) | Bilingual (Portuguese/English) website with light/dark theme, animations and interactive projects | HTML, CSS, JavaScript, Bootstrap |
 | [Fatec Itaquera website](https://github.com/marcelo-almeida-de-araujo/dgm-sa-site-fatec-itaquera) | Institutional website redesign focused on UX/UI | HTML, CSS, JavaScript |
 | [Advisory Dashboard](https://github.com/marcelo-almeida-de-araujo/mada-wb-dashboard) | Client information management system | Java, Spring Boot, MongoDB |
 | [Novo Conecta ONGs](https://github.com/marcelo-almeida-de-araujo/mada-novo-conecta-ongs) | Platform for NGOs and their volunteers | Next.js, Node.js, MySQL |
