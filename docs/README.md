@@ -11,7 +11,7 @@
 Portfólio pessoal e profissional que apresenta quem eu sou, minha trajetória e os projetos que desenvolvi.
 Sou formado em Desenvolvimento de Software Multiplataforma pela [Fatec Itaquera](https://fatecitaquera.cps.sp.gov.br/), atuo como Consultor de Tecnologia na [Konia Tecnologia](https://konia.com.br/) e curso o Técnico em Desenvolvimento de Sistemas na [Etec](https://www.cps.sp.gov.br/etec/).
 
-O site é uma evolução do projeto construído em aula ([mada-portfolio](https://github.com/marcelo-almeida-de-araujo/mada-portfolio)): o layout foi refeito com **Bootstrap 5**, ganhou novas seções e vários recursos interativos, mantendo a identidade visual vermelho/preto da versão original.
+O site é uma evolução do projeto construído em aula ([mada-portfolio](https://github.com/marcelo-almeida-de-araujo/mada-portfolio)): o layout foi refeito com **Bootstrap 5**, ganhou novas seções e vários recursos interativos, mantendo a identidade visual vermelho/preto da versão original. O site inteiro está disponível em **português e inglês**.
 
 ### Seções
 
@@ -35,7 +35,7 @@ O site é uma evolução do projeto construído em aula ([mada-portfolio](https:
 
 - **HTML5** — estrutura semântica (`header`, `nav`, `main`, `section`, `article`, `footer`)
 - **CSS3** — variáveis CSS, Flexbox, Grid, transições, `@keyframes` e media queries
-- **JavaScript (ES6+)** — renderização dinâmica, `IntersectionObserver`, `fetch`, Clipboard API, `localStorage`
+- **JavaScript (ES6+)** — renderização dinâmica, `IntersectionObserver`, `fetch`, Clipboard API, `localStorage`, `navigator.language` e internacionalização (i18n) própria
 - **Bootstrap 5.3** — grid, navbar, collapse, scrollspy, carousel, modal, tabs, toast e validação de formulários
 - **Bootstrap Icons**, **Devicon** e **Google Fonts** (Inter e Space Grotesk)
 - **API pública do GitHub** e **Google Maps (iframe)**
@@ -51,16 +51,17 @@ marcelo-almeida-de-araujo/
     ├── index.html          # Estrutura das seções e componentes Bootstrap
     └── assets/
         ├── css/style.css   # Tema (claro/escuro), layout e todas as animações
-        ├── js/data.js      # Todos os dados do portfólio (perfil, projetos, experiências...)
-        ├── js/main.js      # Renderização do conteúdo e recursos interativos
-        └── img/            # Foto de perfil e telas dos projetos
+        ├── js/i18n.js      # Textos fixos da interface em português e inglês
+        ├── js/data.js      # Todos os dados do portfólio, em português e inglês
+        ├── js/main.js      # Renderização do conteúdo, troca de idioma e recursos interativos
+        └── img/            # Foto de perfil, telas dos projetos e bandeiras do seletor de idioma
 ```
 
 > Este repositório também é o README do meu perfil do GitHub. Por isso o `README.md` da raiz apresenta o perfil, e todo o portfólio (código e documentação) fica na pasta `docs/`, de onde o GitHub Pages publica o site (**Settings → Pages → Branch `main` / pasta `/docs`**).
 
 1. O `index.html` define a estrutura de cada seção com contêineres vazios (`#skillBars`, `#projectsGrid`, `#experienceTimeline`...).
-2. O `data.js` guarda todo o conteúdo em um único objeto `portfolioData`. Para atualizar o portfólio basta editar esse arquivo — não é preciso mexer no HTML.
-3. Ao carregar a página (`DOMContentLoaded`), o `main.js` percorre os dados e gera o HTML de cada seção com *template strings*, depois ativa os recursos interativos.
+2. O `data.js` guarda todo o conteúdo em um único objeto `portfolioData`, com cada texto nas duas línguas (`{ pt: "...", en: "..." }`). Para atualizar o portfólio basta editar esse arquivo — não é preciso mexer no HTML.
+3. Ao carregar a página (`DOMContentLoaded`), o `main.js` define o idioma, traduz os textos fixos, percorre os dados e gera o HTML de cada seção com *template strings*, depois ativa os recursos interativos.
 4. O menu é fixo, muda de aparência ao rolar e destaca a seção atual com o **ScrollSpy** do Bootstrap. No celular ele vira um menu "hambúrguer" que fecha sozinho ao escolher uma seção.
 5. Para rodar localmente basta abrir o `docs/index.html` no navegador (ou usar um servidor estático, como a extensão Live Server).
 
@@ -84,6 +85,7 @@ Além do que foi feito em aula, o portfólio recebeu os seguintes recursos — t
 | 12 | **Mapa incorporado (iframe)** | Seção Contato |
 | 13 | **Barra de progresso de leitura** e **botão voltar ao topo** | Topo e canto inferior da tela |
 | 14 | **Fundo animado** e **anel giratório na foto** | Topo da página |
+| 15 | **Site completo em português e inglês**, com seletor de idioma estilizado e detecção automática pelo idioma do navegador | Seletor com bandeira no menu |
 
 ## Como os recursos foram implementados
 
@@ -137,6 +139,13 @@ Um único listener de `scroll` calcula a porcentagem rolada da página para a la
 
 ### 14. Acessibilidade e responsividade
 O layout usa o grid do Bootstrap e funciona do celular ao desktop. Todas as animações são desativadas para quem ativou "reduzir movimento" no sistema (`prefers-reduced-motion`), e os cards de projeto também podem ser abertos pelo teclado (Enter/Espaço).
+
+### 15. Site bilíngue (português e inglês)
+- **Textos fixos:** no HTML, cada texto da interface tem um atributo como `data-i18n="nav.projects"` (ou `data-i18n-placeholder`, `data-i18n-aria-label`, `data-i18n-title`, `data-i18n-alt`). O arquivo `i18n.js` guarda um dicionário com as duas versões de cada chave, e a função `applyStaticTranslations()` percorre esses elementos trocando o texto ou o atributo. Também atualiza o `lang` da tag `<html>`, o `<title>` e a meta descrição.
+- **Conteúdo:** os textos do `data.js` são objetos `{ pt, en }`. A função `tr()` devolve a versão do idioma atual, e as funções de renderização usam `tr()` em cada campo. Datas dos repositórios do GitHub são formatadas com `toLocaleDateString()` no padrão de cada idioma.
+- **Idioma inicial:** `detectLanguage()` lê `navigator.language`. Se começar com `pt` (`pt-BR`, `pt-PT`...), o site abre em português; qualquer outro idioma abre em inglês. Se o visitante escolher um idioma no seletor, a escolha fica salva no `localStorage` e passa a ter prioridade nas próximas visitas.
+- **Troca sem recarregar:** `setLanguage()` reaplica as traduções e redesenha todas as seções. O carousel de destaque é recriado no mesmo slide, o filtro de projetos selecionado é mantido, o efeito de digitação recomeça com os cargos no novo idioma e, se o modal de um projeto estiver aberto, ele é atualizado na hora.
+- **Seletor estilizado:** em vez do `<select>` nativo (que quase não aceita estilo), foi criado um *select* customizado com botão + lista (`role="listbox"`/`role="option"`), bandeiras em SVG, marcação do idioma ativo e animação de abertura. Ele funciona com mouse, toque e teclado (setas, Home/End, Enter/Espaço e Esc), fecha ao clicar fora e mostra um *toast* confirmando a troca.
 
 ---
 
