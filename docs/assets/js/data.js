@@ -166,7 +166,7 @@ const portfolioData = {
         {
             institution: "Fatec Itaquera",
             course: { pt: "Tecnólogo em Desenvolvimento de Software Multiplataforma", en: "Associate Degree in Multiplatform Software Development" },
-            period: "2023 — 2025"
+            period: "2023 — 2026"
         },
         {
             institution: "Universidade Anhembi Morumbi",
