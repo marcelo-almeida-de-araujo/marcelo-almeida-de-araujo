@@ -213,7 +213,9 @@ function renderSkills() {
 
     $("#techGrid").innerHTML = portfolioData.technologies.map(tech => `
         <div class="tech-item" title="${tech.name}">
-            <img src="${DEVICON}${tech.icon}" alt="" loading="lazy">
+            ${tech.bi
+                ? `<i class="bi ${tech.bi} tech-bi" aria-hidden="true"></i>`
+                : `<img src="${DEVICON}${tech.icon}" alt="" loading="lazy">`}
             <span>${tech.name}</span>
         </div>`).join("");
 }

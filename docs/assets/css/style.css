@@ -488,6 +488,8 @@ a:hover { color: var(--accent-2); }
 .tech-item img { width: 40px; height: 40px; transition: transform .45s ease; }
 .tech-item:hover { transform: translateY(-6px); border-color: var(--accent); color: var(--text); }
 .tech-item:hover img { transform: rotateY(360deg) scale(1.1); }
+.tech-bi { font-size: 2rem; line-height: 40px; height: 40px; color: var(--accent); transition: transform .45s ease; }
+.tech-item:hover .tech-bi { transform: rotateY(360deg) scale(1.1); }
 
 /* ---------- Pills / Timeline ---------- */
 .custom-pills { gap: .5rem; }

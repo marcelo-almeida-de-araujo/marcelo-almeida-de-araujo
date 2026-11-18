@@ -28,7 +28,7 @@ Entrei na programação porque ela é, essencialmente, uma área de lógica. Gos
 
 ### 🧭 Trajetória
 
-- **Konia Tecnologia** — de Estagiário/Trainee a Consultor de Tecnologia *(2025 — hoje)*
+- **Konia Tecnologia** — Consultor de Tecnologia *(jan 2026 — hoje)*, após estágio/trainee *(jun — dez 2025)*: soluções para diferentes clientes com C#/.NET, React, Supabase e Python/Django, além de automação de documentos com Power Automate e VBA
 - **Fatec Itaquera** — Estagiário voluntário de Back-end: API RESTful em PHP, modelagem SQL e front-end em React *(2024)*
 - **Fatec Itaquera** — Monitor voluntário de Desenvolvimento Web I, ajudando alunos com HTML, CSS e JavaScript *(2024)*
 - **Fatec Itaquera** — Estagiário voluntário de Front-end no novo site da faculdade, de pesquisa com usuários a protótipos *(2023 — 2024)*
@@ -75,7 +75,7 @@ I got into programming because it's fundamentally a logic-based field. I enjoy s
 
 ### 🧭 Journey
 
-- **Konia Tecnologia** — from Intern/Trainee to Technology Consultant *(2025 — present)*
+- **Konia Tecnologia** — Technology Consultant *(Jan 2026 — present)*, after an internship/trainee period *(Jun — Dec 2025)*: solutions for different clients with C#/.NET, React, Supabase and Python/Django, plus document automation with Power Automate and VBA
 - **Fatec Itaquera** — Volunteer Back-end Intern: RESTful API in PHP, SQL data modeling and a React front-end *(2024)*
 - **Fatec Itaquera** — Volunteer Teaching Assistant for Web Development I, helping students with HTML, CSS and JavaScript *(2024)*
 - **Fatec Itaquera** — Volunteer Front-end Intern on the college's new website, from user research to prototypes *(2023 — 2024)*
@@ -122,13 +122,14 @@ Before programming, I studied **Electrical Maintenance** and **Electronics** at 
 **Back-end**
 
 <p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js" title="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" alt="C#" title="C#" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="40" alt=".NET" title=".NET" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python" title="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="40" alt="Django" title="Django" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js" title="Node.js" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" alt="PHP" title="PHP" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" alt="Java" title="Java" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="40" alt="Spring Boot" title="Spring Boot" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" alt="C#" title="C#" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="40" alt=".NET" title=".NET" />
 </p>
 
 **Banco de dados · Databases**
@@ -137,6 +138,15 @@ Before programming, I studied **Electrical Maintenance** and **Electronics** at 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" alt="MySQL" title="MySQL" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" alt="MongoDB" title="MongoDB" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="40" alt="SQLite" title="SQLite" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="40" alt="Supabase" title="Supabase" />
+</p>
+
+**Automação · Automation**
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white" alt="Power Automate" />
+  <img src="https://img.shields.io/badge/VBA-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="VBA" />
+  <img src="https://img.shields.io/badge/VBScript-5C2D91?style=for-the-badge&logo=windows&logoColor=white" alt="VBScript" />
 </p>
 
 **Ferramentas · Tools**

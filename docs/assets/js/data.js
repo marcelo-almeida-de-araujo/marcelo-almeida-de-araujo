@@ -34,30 +34,36 @@ const portfolioData = {
     skills: [
         { name: "HTML & CSS", level: 90 },
         { name: "JavaScript", level: 85 },
-        { name: "React / Next.js", level: 75 },
-        { name: "PHP", level: 70 },
+        { name: "React / Next.js", level: 80 },
+        { name: "C# / .NET", level: 75 },
         { name: { pt: "SQL / Banco de dados", en: "SQL / Databases" }, level: 80 },
+        { name: "Python / Django", level: 65 },
+        { name: "PHP", level: 70 },
         { name: "Java / Spring Boot", level: 65 },
-        { name: "Python", level: 65 },
+        { name: { pt: "Automação (Power Automate / VBA)", en: "Automation (Power Automate / VBA)" }, level: 70 },
         { name: "Git & GitHub", level: 85 }
     ],
 
-    // Ícones de tecnologias (devicon)
+    // Ícones de tecnologias: "icon" usa o devicon; "bi" usa um ícone do Bootstrap Icons
     technologies: [
+        { name: "C#", icon: "csharp/csharp-original.svg" },
+        { name: ".NET", icon: "dotnetcore/dotnetcore-original.svg" },
+        { name: "React", icon: "react/react-original.svg" },
+        { name: "Supabase", icon: "supabase/supabase-original.svg" },
+        { name: "Python", icon: "python/python-original.svg" },
+        { name: "Django", icon: "django/django-plain.svg" },
         { name: "HTML5", icon: "html5/html5-original.svg" },
         { name: "CSS3", icon: "css3/css3-original.svg" },
         { name: "JavaScript", icon: "javascript/javascript-original.svg" },
         { name: "Bootstrap", icon: "bootstrap/bootstrap-original.svg" },
-        { name: "React", icon: "react/react-original.svg" },
         { name: "Node.js", icon: "nodejs/nodejs-original.svg" },
-        { name: "Python", icon: "python/python-original.svg" },
         { name: "PHP", icon: "php/php-original.svg" },
         { name: "Java", icon: "java/java-original.svg" },
-        { name: "C#", icon: "csharp/csharp-original.svg" },
-        { name: ".NET", icon: "dotnetcore/dotnetcore-original.svg" },
         { name: "MySQL", icon: "mysql/mysql-original.svg" },
         { name: "MongoDB", icon: "mongodb/mongodb-original.svg" },
-        { name: "Git", icon: "git/git-original.svg" }
+        { name: "Git", icon: "git/git-original.svg" },
+        { name: "Power Automate", bi: "bi-lightning-charge-fill" },
+        { name: "VBA", bi: "bi-file-earmark-code-fill" }
     ],
 
     softSkills: [
@@ -78,18 +84,36 @@ const portfolioData = {
         {
             company: "Konia Tecnologia",
             position: { pt: "Consultor de Tecnologia", en: "Technology Consultant" },
-            period: { pt: "jun 2025 — presente", en: "Jun 2025 — present" },
+            period: { pt: "jan 2026 — presente", en: "Jan 2026 — present" },
             location: { pt: "São Paulo, Brasil", en: "São Paulo, Brazil" },
             activities: {
                 pt: [
-                    "Ingressei como Estagiário/Trainee em tecnologia e hoje atuo como Consultor de Tecnologia",
-                    "Desenvolvimento e manutenção de sistemas",
+                    "Desenvolvimento de soluções para diferentes clientes e projetos, com back-end em C#/.NET e front-end web em React",
+                    "Uso do Supabase como back-end e banco de dados em projeto de cliente e atuação em back-end Python/Django em outro cliente",
+                    "Assessoria, consultoria e planejamento em TI, atuando individualmente e em equipes multidisciplinares com empresas parceiras"
+                ],
+                en: [
+                    "Building solutions for different clients and projects, with C#/.NET back-ends and React web front-ends",
+                    "Used Supabase as back-end and database on a client project and worked on a Python/Django back-end for another client",
+                    "IT advisory, consulting and planning, working both independently and in multidisciplinary teams with partner companies"
+                ]
+            }
+        },
+        {
+            company: "Konia Tecnologia",
+            position: { pt: "Estagiário/Trainee em Tecnologia (Desenvolvedor)", en: "Technology Intern/Trainee (Developer)" },
+            period: { pt: "jun 2025 — dez 2025", en: "Jun 2025 — Dec 2025" },
+            location: { pt: "São Paulo, Brasil", en: "São Paulo, Brazil" },
+            activities: {
+                pt: [
+                    "Automatizei a formatação de documentos DOCX a partir de templates com Power Automate, VBA e VBScript (primeiro projeto na empresa)",
+                    "Apoio no desenvolvimento e na manutenção de sistemas",
                     "Documentação técnica e suporte ao sistema de engenharia",
                     "Produção de materiais para treinamentos"
                 ],
                 en: [
-                    "Joined as a Technology Intern/Trainee and now work as a Technology Consultant",
-                    "Development and maintenance of systems",
+                    "Automated DOCX document formatting from templates with Power Automate, VBA and VBScript (first project at the company)",
+                    "Supported the development and maintenance of systems",
                     "Technical documentation and support for the engineering system",
                     "Creation of training materials"
                 ]
